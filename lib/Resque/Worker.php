@@ -22,6 +22,11 @@ class Resque_Worker
 	public $logger;
 
 	/**
+	 * @var mixed Unused since the PSR-3 logger; still set by bin/resque
+	 */
+	public $logLevel;
+
+	/**
 	 * @var bool Whether this worker is running in a forked child process.
 	 */
 	public $hasParent = false;
